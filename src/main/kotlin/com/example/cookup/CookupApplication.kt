@@ -9,7 +9,6 @@ import com.example.cookup.models.Customer
 import org.bson.types.ObjectId
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories
 
-
 @EnableMongoRepositories
 @SpringBootApplication
 class CookupApplication
@@ -18,7 +17,6 @@ data class Message(val id: String?, val text: String)
 fun main(args: Array<String>) {
 	runApplication<CookupApplication>(*args)
 }
-
 
 @RestController
 class CustomerResource{
